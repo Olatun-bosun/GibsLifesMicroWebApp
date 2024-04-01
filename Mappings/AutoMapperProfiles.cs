@@ -10,6 +10,7 @@ namespace GibsLifesMicroWebApp.Mappings
         {
             CreateMap<PolicyMas, PolicyMasDto>().ReverseMap();
             CreateMap<AddPolicyMasRequest, PolicyMas>().ReverseMap();
+            CreateMap<SubRisks, SubRisksDto>().ReverseMap();
         }
     }
 

@@ -15,7 +15,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerDb")));
 
 builder.Services.AddScoped<IPolicyMasRepository, SQLPolicyMasRepository>();
-
+builder.Services.AddScoped<ISubRisksRepository, SQLSubRisksRepository>();
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();

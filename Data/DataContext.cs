@@ -11,6 +11,7 @@ namespace GibsLifesMicroWebApp.Data
         }
 
         public DbSet<PolicyMas> PolicyMaster { get; set; }
+        public DbSet<SubRisks> SubRisks { get; set; }
 
     }
 }
